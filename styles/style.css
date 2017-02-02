@@ -1,5 +1,465 @@
-#espaceur
-{
-    background-color: palegreen;
-    height: 310px;
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
 }
+/*INDEX*/
+/*header*/
+/* NAVBAR */
+.navigation {
+  background: white;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.brand img{
+height: 100px;
+margin-top: -15px;
+}
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size: 18px;
+    font-family: 'Neucha', cursive;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: white;
+  color: rgb(210, 129, 221);
+  transition: 0.5s ease;
+
+
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 70px;
+  width: 70px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/*TITRE*/
+h1{
+  padding: 40px 20px 20px 10px;
+  line-height: 30px;
+  background: white;
+  color: rgb(122, 219, 131);
+  font-family: 'Neucha', cursive;
+  font-size: 40px;
+}
+
+h1 + p{
+  font-family: 'Dosis', sans-serif;
+  color: rgb(13, 13, 13);
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+hr{
+  width: 60%;
+  opacity: 0.30;
+}
+
+h2{
+  padding: 20px 20px 0px 10px;
+  line-height: 30px;
+  background: white;
+  color: rgb(122, 219, 131);
+  font-family: 'Neucha', cursive;
+  font-size: 30px;
+}
+
+h2 + p{
+  font-family: 'Dosis', sans-serif;
+  color: rgb(13, 13, 13);
+  font-size: 19.5px;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+
+h4{
+  font-family: 'Dosis', sans-serif;
+}
+
+.signature{
+  opacity: 0.2;
+  font-family: 'Neucha', cursive;
+}
+/*map*/
+.map-container {
+    width: 100%;
+    margin: 0px 0 50px;
+}
+.map-container iframe{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+    pointer-events: auto;
+}
+div#nicetext
+{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Neucha', cursive;
+    color: white;
+}
+/*separateur*/
+.separator{
+  height: 10px;
+  background-color: #7adb83;
+
+}
+
+.containerGris{
+  height: 300px;
+  background-color: #001623;
+}
+#titreseparateur
+{
+    color:#7adb83;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.forceMargin{
+  margin-top: 50px;
+
+}
+#texteseparateur
+{
+    color:white;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+#iconesreseauxindex {
+  margin-top: 20px;
+    text-align:center;
+    font-family: 'Neucha', cursive;
+    color: black;
+    font-size: 2em;
+    vertical-align: middle;
+}
+/*presentation eau coco*/
+#eaucocoindex
+{
+    font-family: 'Neucha', cursive;
+    font-size: 3em;
+    color: limegreen;
+}
+#eaucocotexte
+{
+    font-family: 'Neucha';
+    size:1em;
+}
+/*footer*/
+.footer {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.footer p.slogan {
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.footer p.copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.footer .copywrite a {
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+    color: #75716a;
+    margin: 0;
+    transition: 0.5s
+}
+
+.footer .copywrite a:hover {
+
+    color: #ea6a9f;
+    transition: 0.5s
+}
+
+.footer .copywrite a::after {
+    content: " | ";
+    color: #75716a;
+    padding: 0 0.4rem 0 0.8rem;
+}
+
+.footer .links a {
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+    color: #75716a;
+    margin: 0;
+    transition: 0.5s
+}
+
+.footer .links a:hover {
+
+    color: #ea6a9f;
+    transition: 0.5s
+}
+
+.footer .links a::after {
+    content: "  ";
+    padding: 0 0.4rem 0 0.8rem;
+}
+/*petite soif*/
+
+.img-culturecoco {
+  float: right;
+}
+div#socialnet
+{
+    background-color:limegreen;
+    text-align: center;
+}
+#reseauxtitre
+{
+    font-family: 'Neucha', cursive;
+    font-size: 3em;
+    color: limegreen;
+    text-align: center;
+}
+#reseauxtexte
+{
+    text-align: center;
+    font-family: 'Neucha';
+    font-size: 1.5em;
+}
+#soyezacteurs
+{
+    text-align: center;
+}
+/*bouton formulaire*/
+.confirmerformulaire
+{
+    font-family: 'Neucha', cursive;
+    font-size: 3em;
+}
+/*PETITE SOIF BUTTON */
+
+.box {
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 25px;
+  display: block;
+  margin: 60px 10px;
+}
+
+.box-icon {
+  background-color: #77c0ee;
+  border-radius: 50%;
+  display: table;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+  margin-top: -61px;
+  font-size: 3rem; }
+
+  .box-icon1 {
+    background-color: #ffe601;
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+    font-size: 3rem; }
+  .box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 7px;
+   }
+   .box-icon1 span {
+     color: #fff;
+     display: table-cell;
+     text-align: center;
+     padding-top: 20px;
+     padding-left:2px;
+    }
+
+.info h4 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+.info p {
+  color: #717171;
+  font-size: 16px;
+  padding-top: 10px; }
+.info a {
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.5s ease 0s; }
+  .info a:hover {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.5s ease 0s; }
+
+#petitsoifheader
+{
+    background: url(../images/bouteillePerso2.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+#textecentre
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Neucha', cursive;
+    font-size: 2em;
+    color:hotpink;
+}
+/*menu reseaux*/
+.iconesreseauxmenu
+{
+    float: right;
+}
+/*viewport*/

@@ -1,46 +1,215 @@
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VW vaivai</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Coconut Tour VaïVaï</title>
     <link rel="stylesheet" href="styles/foundation.min.css">
     <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Dosis|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <section class="navigation">
+        <div class="row">
+            <div class="brand">
+                <a href="index.html" title="Retour événement"><img src="images/vaivai.png" alt="logo" /></a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" title="index" style="text-decoration:underline">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="pages/petitesoif.php" title="reseaux">Petite soif ?</a>
+                    </li>
+                    <li>
+                        <a href="pages/culturecoco.html" title="culturecoco">Culture Coco</a>
+                    </li>
+                    <li>
+                        <a href="https://www.vaivai.fr/fr/acheter/" title="vaivaiproduit">Produits</a>
+                    </li>
+                    <li class="iconesreseauxmenu">
+                        <a href="https://twitter.com/vaivaiconnexion" titre="Lien twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li   class="iconesreseauxmenu">
+                <a href="https://www.facebook.com/vaivaifrance/" titre="Lien facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li  class="iconesreseauxmenu">
+                <a href="https://fr.pinterest.com/vaivai/" titre="Lien pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    </li>
+                <li  class="iconesreseauxmenu">
+                <a href="https://www.instagram.com/vaivaiconnexion/" titre="Lien instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li  class="iconesreseauxmenu">
+                <a href="https://www.youtube.com/user/Vaivaiconnexion" titre="Lien youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li  class="iconesreseauxmenu">
+                <a href="https://www.linkedin.com/company/va-va-/ " titre="Lien linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+<!--animation-->
+   <div class="row fullWidth">
+        <div id="bodymovin"></div>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="animation/bodymovin.js"></script>
+        <script>
+            var bodymovinContainer = document.getElementById('bodymovin');
+            var count = 0;
+            var animData = {
+                container: document.getElementById('bodymovin'),
+                renderer: 'svg',
+                loop: true,
+                prerender: true,
+                autoplay: true,
+                autoloadSegments: false,
+                //animationData: anim2
+                path: 'animation/data.json'
+            };
+
+            var anim;
+
+            anim = bodymovin.loadAnimation(animData);
+        </script>
+    <!--Présentation event-->
+    <div class="row">
+        <div class="small-12 medium-12 columns">
+            <h1>Vaïvaï lance le Cocotrip !</h1>
+            <p>
+                Du 17 mai au 12 Juillet, nous lançons l'opération Cocotrip, où le Cocovan sillonnera les rues de Paris afin de partager mais surtout, de faire découvrir la noix de coco ; on l’aime ou on là déteste, mais reste encore à la goûter. C’est pour cela que le
+                Cocovan vous invite à déguster la coco sous toutes ses formes ! Mais attention, vous ne repartirez peut être pas seul, ni les bras vides…
+            </p>
+            <hr />
+            <h1>Où ? Quand ? Trouvez le Cocovan !</h1>
+        </div>
+    </div>
+    <!--Maps-->
+    <div class="row">
+        <div class="small-12 medium-12 columns">
+            <div class="map-container"><iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=1dQJ5MikiaMHRpDaBwk_kTTDmYQo"></iframe></div>
+        </div>
+    </div>
+     <!--Slider-->
+    <div class="row monSlider fullWidth">
+        <div class="maSlide">
+            <img src="images/slider1.png" alt="Mon image 1">
+        </div>
+        <div class="maSlide">
+            <img src="images/slider2.png" alt="Mon image 2">
+        </div>
+    </div>
+    <!--separateur-->
+    <div class="separator"></div>
+    <div class="containerGris">
+        <div class="row fullWidth" id="titreseparateur">
+            <div class="small-12 medium-12 columns forceMargin">Fan de noix de coco ? Rejoignez-nous !</div>
+        </div>
+        <div class="row fullWidth" id="texteseparateur">
+            <div class="small-12 medium-12 columns">Retrouvez Vaïvaï sur vos réseaux préférés et plongez avec nous dans notre univers complètement coco !<br/></div>
+        </div>
+        <div class="row fullWidth" id="iconesreseauxindex">
+            <div class="small-12 medium-12 columns links">
+                <a href="https://twitter.com/vaivaiconnexion" titre="Lien twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/vaivaifrance/" titre="Lien facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://fr.pinterest.com/vaivai/" titre="Lien pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/vaivaiconnexion/" titre="Lien instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/user/Vaivaiconnexion" titre="Lien youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/va-va-/ " titre="Lien linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+    <!--présentation eau coco-->
+    <div class="row">
+              <div class="small-12 medium-12 columns"><h1>Eau de coco ? Quesacoco ?</h1>
+              <p>
+                Eau de quoi ? Ne parle t’on pas de lait de coco plutôt ? Eh bien non ! Enfin si, mais, l’eau de coco ou jus de coco est le liquide naturellement contenu dans la noix, tandis que le lait de coco est obtenu par la fabrication humaine. Le lait de coco provient
+                du broyage de la pulpe de la noix de coco avec de l’eau bouillante. En bref, le lait de coco est un produit reconstitué alors que l’eau de coco est un produit brut
+              </p></div>
+    </div>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="row">
+            <div class="small-12 columns">
+
+                <p class="links">
+                    <a href="http://www.welcometothejungle.co/companies/vaivai" title="footercarriere"><i class="fa fa-coffee" aria-hidden="true"></i> Carrière</a>
+                    <a href="https://drive.google.com/open?id=0B4Nje0qNbVTea2k0Smd2bGdaQ2M" title="footermedia"><i class="fa fa-folder-open" aria-hidden="true"></i> Médias</a>
+                    <a href="http://vaivaipresse.tumblr.com/"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Presse</a>
+                    <a href="https://www.vaivai.fr/fr/contact/"><i class="fa fa-truck" aria-hidden="true"></i> Distributeurs</a>
+                </p>
+                <p class="copywrite">
+                    <a href="#top">© 2017 Vaivai SAS</a>
+                    <a href="https://www.vaivai.fr/fr/conditions-utilisation/" title="footerconditions">Conditions d’utilisation</a>
+                    <a href="https://www.vaivai.fr/fr/mentions-legales/" title="footerlegal">Mentions légales</a>
+                    <a href="https://www.vaivai.fr/fr/vie-privee/" title="footervieprivee"> Vie privée</a>
+                </p>
+                <p class="slogan"><img src="images/vaivai.png" alt="logo" /></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/what-input.js"></script>
     <script src="scripts/vendor/foundation.min.js"></script>
     <script src="scripts/vendor/slick.min.js"></script>
     <script>
-      
-         $(document).foundation();
-      
-        
+        $(document).foundation();
+
+        $(document).ready(function() {
+            $('.monSlider').slick({
+                autoplay: true,
+                autoplaySpeed: 4500,
+            });
+        });
+
+        (function($) { // Begin jQuery
+            $(function() { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function(e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function() {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function() {
+                    $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#nav-toggle').on('click', function() {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+
+        $('.map-container')
+            .click(function() {
+                $(this).find('iframe').addClass('clicked')
+            })
+            .mouseleave(function() {
+                $(this).find('iframe').removeClass('clicked')
+            });
     </script>
-  </body>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
