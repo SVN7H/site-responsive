@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Coconut Tour VaïVaï</title>
+    <title>Cocotrip by Vaïvaï</title>
     <link rel="stylesheet" href="../styles/foundation.min.css">
     <link rel="stylesheet" href="../styles/slick.css">
     <link rel="stylesheet" href="../styles/slick-theme.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Neucha|Dosis|Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&#124;Dosis&#124;Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -35,22 +35,22 @@
                     <li>
                         <a href="https://www.vaivai.fr/fr/acheter/" title="vaivaiproduit">Produits</a>
                     </li>
-                    <li>
-                        <a href="https://twitter.com/vaivaiconnexion" titre="Lien twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <li class="iconesreseauxmenu">
+                        <a href="https://twitter.com/vaivaiconnexion" title="Lien twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </li>
-                    <li>
-                <a href="https://www.facebook.com/vaivaifrance/" titre="Lien facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li>
-                <a href="https://fr.pinterest.com/vaivai/" titre="Lien pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <li   class="iconesreseauxmenu">
+                <a href="https://www.facebook.com/vaivaifrance/" title="Lien facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li  class="iconesreseauxmenu">
+                <a href="https://fr.pinterest.com/vaivai/" title="Lien pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                     </li>
-                <li>
-                <a href="https://www.instagram.com/vaivaiconnexion/" titre="Lien instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <li  class="iconesreseauxmenu">
+                <a href="https://www.instagram.com/vaivaiconnexion/" title="Lien instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </li>
-                    <li>
-                <a href="https://www.youtube.com/user/Vaivaiconnexion" titre="Lien youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <li  class="iconesreseauxmenu">
+                <a href="https://www.youtube.com/user/Vaivaiconnexion" title="Lien youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                     </li>
-                    <li>
-                <a href="https://www.linkedin.com/company/va-va-/ " titre="Lien linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <li  class="iconesreseauxmenu">
+                <a href="https://www.linkedin.com/company/va-va-/ " title="Lien linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -58,6 +58,15 @@
     </section>
 <!--header-->
     <div id="petitsoifheader"><p id="textecentre"><?php echo htmlspecialchars($_POST[nom]) ?></p></div>
+    <div class="row" id="cachersurgrandecran">
+        <div class="small-12 medium-12 columns">
+            <h1 style="text-align:center">Le cocovan t'offre ta bouteille personnalisée !</h1>
+            <p style="text-align:center;">
+                Partage simplement ton image personnalisée sur les réseaux sociaux avec <strong>#cocoaddict</strong> et récupère la bouteille au cocovan :)
+            </p>
+            <hr/>
+        </div>
+    </div>
     <form method="post" action="petitesoif.php">
   <div class="row">
     <div class="medium-12 columns">
@@ -72,7 +81,7 @@
         </div>
         <div class="row">
     <div class="medium-2 medium-centered small-2 small-centered columns">
-        <input type="submit" class="button success" style="font-family: 'Neucha', cursive;font-size: 2em;" placeholder="Participer">
+        <input type="submit" class="button success" style="font-family: 'Neucha', cursive;font-size: 2em; margin: 0 auto;" placeholder="Participer">
       </div>
         </div>
 <!--texte promo-->
@@ -91,7 +100,7 @@
             </div>
             <div class="info">
               <h4 class="text-center">Tweet it!</h4>
-              <p>Prenez vous en photo sur le stand et publier votre plus beau cliché sur un réseau social avec le hashtag : #cocoaddict.</p>
+              <p>Prenez vous en photo sur le stand et publiez votre plus beau cliché sur un réseau social avec le hashtag : #cocoaddict.</p>
             </div>
           </div>
         </div>
@@ -102,32 +111,31 @@
             </div>
             <div class="info">
               <h4 class="text-center">Snap it !</h4>
-              <p>Prenez vous en photo avec notre filtre snapchat completement coco et rejoignez notre story "cocoaddict" ! Plutôt simple non ?</p>
+              <p>Prenez vous en photo avec notre filtre snapchat complètement coco et rejoignez notre story "cocoaddict" ! Plutôt simple non ?</p>
             </div>
           </div>
         </div>
       </div>
 
-</div></div>
 <!--texte en dessous-->
       <div class="row" id="soyezacteurs">
-      <div class="small-12 medium-12 large-12 columns">
-        <h1>Soyez acteur du mouvement !</h1>
-      </div>
+        <div class="small-12 medium-12 large-12 columns">
+          <h1>Rejoignez le mouvement #cocoaddict !</h1>
+        </div>
       </div>
 <!--slider-->
 <div class="row monSliderreseau ">
        <div class="maSlidereseau">
-         <img data-lazy="../images/insta1.png"/>
+         <img data-lazy="../images/insta1.png" alt="insta1"/>
        </div>
        <div class="maSlidereseau">
-         <img data-lazy="../images/insta2.png"/>
+         <img data-lazy="../images/insta2.png" alt="insta2"/>
        </div>
        <div class="maSlidereseau">
-         <img data-lazy="../images/insta3.png"/>
+         <img data-lazy="../images/insta3.png" alt="insta3"/>
        </div>
-    <div class="maSlidereseau">
-         <img data-lazy="../images/insta4.png"/>
+       <div class="maSlidereseau">
+         <img data-lazy="../images/insta4.png" alt="insta4"/>
        </div>
     </div>
 <!--footer-->
@@ -163,8 +171,8 @@ $('.monSliderreseau').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 3,
   slidesToScroll: 1,
-    autoplay : true,
-    autoplaySpeed : 4000,
+  autoplay : true,
+  autoplaySpeed : 4000,
 });
 
         (function($) { // Begin jQuery
@@ -191,5 +199,5 @@ $('.monSliderreseau').slick({
             }); // end DOM ready
         })(jQuery); // end jQuery
           </script>
-  </body>
+    </body>
 </html>
